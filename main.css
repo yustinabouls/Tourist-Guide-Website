@@ -1,0 +1,16 @@
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse; /*comment this line for double line borders*/
+}
+.paris {
+    background-color: aqua;
+    padding-left: 100px;
+
+}
+
+
+#rogers-centre{
+    color:blue
+}
