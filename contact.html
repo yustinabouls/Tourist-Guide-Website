@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Yustina Bouls">
+        <meta name="description" content="This is my second web page">
+        <title>Conatact Us</title>
+
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <a href="/" > Home Page </a>
+                <a href="about.html" > About Us </a>
+                <a href="attractions.html" > Attractions Page </a>
+            </nav>
+            <hr>
+            <h1 style="color: blue;">Contact</h1>
+
+        </header>
+        <main>
+            <article>
+                <h2>Contact Page</h2>
+                <form action="https://httpbin.org/get" method="get">
+                    <fieldset>
+                        <legend>Personal Info</legend>
+                        <p>
+                            <label for="firstName">First Name:</label>
+                            <input type ="text" name="firstName" id="firstName" placeholder="First Name" autofocus required>
+                        </p>
+                        <p>
+                            <label for="lastName">Last Name:</label>
+                            <input type ="text" name="lastName" id="lastName" placeholder="Last Name" autocomplete="on">
+                        </p>    
+                        <p>
+                            <label for="password">Password:</label>
+                            <input type ="password" name="password" id="password" placeholder="Password" required>
+                        </p>   
+                        <p>
+                            <label for="phone">Phone Number:</label>
+                            <input type ="tel" name="FirstName" id="phone" placeholder="5555555555" pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
+                        </p>  
+                        
+                    </fieldset>
+                    <br>
+
+                    <fieldset>
+                        <legend>Feedback</legend>
+                        <p><label for="Message">Write to us your feedback!</label></p>
+                        <textarea name="Message" id="Message" cols="30" rows="10" placeholder="Message..."></textarea>
+                    </fieldset>
+                    <br>
+
+                   <!-- <fieldset>
+                        <legend>Option Group</legend>
+                        <select name="coffee" id="coffee">
+                            <option value="regular coffee"> Regular Coffee</option>
+                            <option value="iced coffee"> Iced Coffee</option>
+                            <option value="latte coffee"> Latte Coffee</option>
+                            <option value="cappuccino"> Cappuccino</option>
+                        </select>
+                    </fieldset>
+                    <br>-->
+
+                    <fieldset>
+                        <legend>Checkbox</legend>
+                        <p>Would you like to subscribe to our newsletter?</p>
+
+                        <p>
+                            <label for="yes">Yes</label>
+                            <input type="checkbox" name="yes" id="yes">
+                        </p>
+                    </fieldset>
+                    <br>
+
+                    <!--<fieldset>
+                        <legend>Ratio Button</legend>
+                        <p>What is your fav food?</p>
+
+                        <p>
+                            <label fo="pizza">Pizza:</label>
+                            <input type="radio" name="food" id="pizza" value="pizza">
+                        </p>
+
+                        <p>
+                            <label fo="tacos">Tacos:</label>
+                            <input type="radio" name="food" id="tacos" value="tacos">
+                        </p>
+
+                        <p>
+                            <label fo="other">Other:</label>
+                            <input type="radio" name="food" id="other" value="other">
+                        </p>
+                    </fieldset>-->
+                    <br>
+
+                    <button type="submit">Submit (Get)</button>
+                    <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Submit (Post)</button>
+                    <button type="reset">Reset</button>
+                </form>
+
+
+            </article>
+
+        </main>
